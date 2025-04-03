@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from termcolor import colored 
 from colorama import init
 
-Inisialisasi colorama
+#Inisialisasi colorama
 
 init(autoreset=True)
 
