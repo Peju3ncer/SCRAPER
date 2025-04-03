@@ -1,4 +1,11 @@
-import requests import socket import whois import threading import os from bs4 import BeautifulSoup from termcolor import colored from colorama import init
+import requests 
+import socket 
+import whois 
+import threading 
+import os 
+from bs4 import BeautifulSoup 
+from termcolor import colored 
+from colorama import init
 
 Inisialisasi colorama
 
