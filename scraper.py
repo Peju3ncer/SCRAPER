@@ -11,7 +11,8 @@ from colorama import init
 
 init(autoreset=True)
 
-def print_banner(): banner = """ 
+def print_banner(): 
+ banner = """ 
  ░▒▓███████▓▒░░▒▓██████▓▒░░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓███████▓▒░░▒▓████████▓▒░▒▓███████▓▒░  
 ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
@@ -21,7 +22,8 @@ def print_banner(): banner = """
 ░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
                                                                                              
   Made By : Peju3ncer                                                                                           
-""" print(colored(banner, "cyan"))
+  """
+ print(colored(banner, "cyan"))
 
 def whois_lookup(domain): try: w = whois.whois(domain) print(colored(f"[+] WHOIS Info for {domain}:\n{w}", "green")) except Exception as e: print(colored(f"[-] WHOIS lookup failed: {e}", "red"))
 
